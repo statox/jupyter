@@ -6,5 +6,5 @@ services:
       - 8888:8888
     volumes:
       - ./env.yml:/home/jovyan/env.yml
-      - ./matrix.ipynb:/home/jovyan/work/matrix.ipynb
+      - ./work:/home/jovyan/work/
       - ./hooks/:/usr/local/bin/before-notebook.d/
