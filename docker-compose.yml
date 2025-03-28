@@ -1,0 +1,9 @@
+services:
+  jupyter:
+    container_name: jupyter
+    image: quay.io/jupyter/base-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./env.yml:/home/jovyan/env.yml
+      - ./matrix.ipynb:/home/jovyan/work/matrix.ipynb
