@@ -1,7 +1,7 @@
 services:
   jupyter:
     container_name: jupyter
-    image: quay.io/jupyter/base-notebook
+    build: ./builder
     ports:
       - 8888:8888
     volumes:
