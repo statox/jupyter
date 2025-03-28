@@ -7,3 +7,4 @@ services:
     volumes:
       - ./env.yml:/home/jovyan/env.yml
       - ./matrix.ipynb:/home/jovyan/work/matrix.ipynb
+      - ./hooks/:/usr/local/bin/before-notebook.d/

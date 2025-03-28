@@ -10,7 +10,3 @@ RUN apt-get update && \
 
 # Switch back to jovyan user
 USER $NB_UID
-
-# COPY env.yml .
-# RUN mamba env create -y -f env.yml -n my_env
-# RUN mamba run -n test python -m ipykernel install --user --name=statox_kernel
